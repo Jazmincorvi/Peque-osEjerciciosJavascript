@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ejemplos con javascript</title>
+<meta charset="utf-8"/>
+<script >
+
+var estado="Nuevo Mèxico";
+var cont=0;
+var num=0.0;
+
+ function mostrar1 ()
+
+ {
+ 	alert('Nueva Jersey' +cont);
+ 	cont++;
+ }
+ function mostrar2 ()
+
+ {
+ 	alert('Arizona' +cont);
+ 	cont++;
+ }
+ function mostrar3 ()
+ {
+ 	alert('Colorado' +cont);
+ 	cont++;
+ }
+ function mostrar4 ()
+ {
+ 	alert('Michigan' +cont);
+ 	cont++;
+ }
+ function mostrar5 ()
+ {
+ 	alert('Nuevo Mèxico' +cont);
+ 	cont++;
+ }
+ function arrancar ()
+ {
+ 	document.getElementById("p1").onclick=mostrar1;
+ 	document.getElementById("p2").onclick=mostrar2;
+ 	document.getElementById("p3").onclick=mostrar3;
+ 	document.getElementById("p4").onclick=mostrar4;
+ 	document.getElementById("p5").onclick=mostrar5;
+
+ }
+	
+	window.onload=arrancar;
+
+</script>
+</head>
+
+<body>
+
+
+<p id="p1"> Nueva Jersey</p>
+<p id="p2"> Arizona</p>
+<p id="p3">Colorado</p>
+<p id="p4"> Michigan</p>
+<p id="p5">Nuevo Mèxico</p>
+</body>
+</html>
